@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
         heading: ["Sora", "sans-serif"],
+        cormorant: ["Cormorant Garamond", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       keyframes: {
         float: {

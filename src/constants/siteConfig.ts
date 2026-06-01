@@ -24,7 +24,6 @@ export const navItems: NavItem[] = [
   { label: "Pricing", path: "/pricing" },
   { label: "About Us", path: "/about" },
   { label: "Blog", path: "/blog" },
-  { label: "Contact Us", path: "/contact" },
 ];
 
 export const websiteTypeOptions = [

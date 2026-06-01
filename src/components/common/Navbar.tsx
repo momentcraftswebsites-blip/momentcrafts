@@ -8,26 +8,30 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/50 bg-white/80 backdrop-blur-lg">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-pink-500 via-fuchsia-500 to-indigo-500 text-lg font-bold text-white">
-            MC
-          </div>
-          <div>
-            <p className="font-heading text-lg font-bold text-slate-900">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+        <Link to="/" className="flex items-center gap-3">
+          <img src="/McLogo.png" alt={siteConfig.brand} className="h-10 w-auto sm:h-14 lg:h-[72px]" />
+          <div className="flex flex-col gap-0.5">
+            <span className="font-cormorant text-lg font-semibold tracking-[0.12em] bg-gradient-to-r from-[#d633c7] to-[#7c4dff] bg-clip-text text-transparent sm:text-xl lg:text-2xl">
               {siteConfig.brand}
-            </p>
-            <p className="text-xs text-slate-500">{siteConfig.tagline}</p>
+            </span>
+            <span className="font-montserrat text-[8px] font-light tracking-[0.2em] uppercase text-rose-400/90 sm:text-[10px]">
+              {siteConfig.tagline}
+            </span>
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-9 lg:flex">
           {navItems.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `text-sm font-semibold transition ${isActive ? "text-fuchsia-600" : "text-slate-700 hover:text-fuchsia-600"}`
+                `relative text-sm font-medium tracking-wide transition-all duration-200 ${
+                  isActive
+                    ? "text-fuchsia-600"
+                    : "text-slate-600 hover:text-fuchsia-500 hover:drop-shadow-[0_0_6px_rgba(192,38,211,0.4)]"
+                }`
               }
             >
               {item.label}

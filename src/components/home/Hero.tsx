@@ -68,10 +68,14 @@ export const Hero = () => {
           transition={{ duration: 0.55 }}
           className="relative"
         >
-          <img
-            src="https://images.unsplash.com/photo-1519223400710-0c1d8e8a1f32?auto=format&fit=crop&w=1400&q=80"
-            alt="MomentCrafts showcase"
-            className="w-full rounded-[2rem] border border-white/60 object-cover shadow-[0_35px_80px_-32px_rgba(124,58,237,0.45)]"
+          <div
+            className="w-full rounded-[2rem] border border-white/60 shadow-[0_35px_80px_-32px_rgba(124,58,237,0.45)] overflow-hidden"
+            style={{
+              backgroundImage: "url('/HomePageBackground.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              minHeight: "420px",
+            }}
           />
           <motion.div
             animate={{ y: [0, -8, 0] }}
