@@ -14,9 +14,9 @@ const PricingPage = () => {
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <SectionHeading
-        eyebrow="Pricing"
-        title="Transparent Plans For Every Stage"
-        subtitle="Pick a package and we will craft a premium website tailored to your goals."
+        eyebrow="Investment"
+        title="Every Moment Deserves a Masterpiece"
+        subtitle="Choose the experience that matches your vision. Each plan is crafted with love, precision, and purpose."
         centered
       />
       <div className="mt-10">

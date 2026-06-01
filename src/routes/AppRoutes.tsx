@@ -7,7 +7,6 @@ import { ProtectedRoute } from "./ProtectedRoute";
 const HomePage = lazy(() => import("../pages/HomePage"));
 const ServicesPage = lazy(() => import("../pages/ServicesPage"));
 const WorkPage = lazy(() => import("../pages/WorkPage"));
-const PricingPage = lazy(() => import("../pages/PricingPage"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
 const BlogPage = lazy(() => import("../pages/BlogPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage"));
@@ -28,7 +27,6 @@ export const AppRoutes = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/work" element={<WorkPage />} />
-          <Route path="/pricing" element={<PricingPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
