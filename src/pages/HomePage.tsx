@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { AnimatedSection } from "../components/common/AnimatedSection";
 import { BlogGrid } from "../components/common/BlogGrid";
-import { FeedbackSection } from "../components/common/FeedbackSection";
 import { FaqAccordion } from "../components/common/FaqAccordion";
 import { PortfolioGrid } from "../components/common/PortfolioGrid";
 import { SectionHeading } from "../components/common/SectionHeading";
@@ -10,7 +9,6 @@ import { TestimonialsSlider } from "../components/common/TestimonialsSlider";
 import { CTASection } from "../components/home/CTASection";
 import { Hero } from "../components/home/Hero";
 import { ProcessSteps } from "../components/home/ProcessSteps";
-import { StatsStrip } from "../components/home/StatsStrip";
 import { updateDocumentMeta } from "../utils/seo";
 
 const HomePage = () => {
@@ -57,24 +55,9 @@ const HomePage = () => {
       </AnimatedSection>
 
       <AnimatedSection>
-        <StatsStrip />
-      </AnimatedSection>
-
-      <AnimatedSection>
         <SectionHeading centered title="What Our Clients Say" />
-        <div className="mx-auto mt-7 max-w-3xl">
+        <div className="mt-7">
           <TestimonialsSlider />
-        </div>
-      </AnimatedSection>
-
-      <AnimatedSection>
-        <SectionHeading
-          centered
-          title="Share Your Feedback"
-          subtitle="Tell us about your experience with MomentCrafts. Your feedback helps us improve every project."
-        />
-        <div className="mx-auto mt-7 max-w-3xl">
-          <FeedbackSection />
         </div>
       </AnimatedSection>
 

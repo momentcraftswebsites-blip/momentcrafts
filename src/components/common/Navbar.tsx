@@ -15,7 +15,7 @@ export const Navbar = () => {
             <span className="font-cormorant text-lg font-semibold tracking-[0.12em] bg-gradient-to-r from-[#d633c7] to-[#7c4dff] bg-clip-text text-transparent sm:text-xl lg:text-2xl">
               {siteConfig.brand}
             </span>
-            <span className="font-montserrat text-[8px] font-light tracking-[0.2em] uppercase text-rose-400/90 sm:text-[10px]">
+            <span className="font-montserrat text-[8px] font-medium tracking-[0.2em] uppercase text-[#6D28D9] sm:text-[10px]">
               {siteConfig.tagline}
             </span>
           </div>

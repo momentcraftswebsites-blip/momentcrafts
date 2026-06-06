@@ -1,73 +1,74 @@
-import type { ProjectItem } from "../types";
+import type { ProjectCategory } from "../types";
 
-export const projectCategories = [
+export const projectCategories: ProjectCategory[] = [
   "All",
   "Wedding Websites",
   "Housewarming Websites",
   "Invitation Websites",
   "Reunion Websites",
   "Business Websites",
-] as const;
+];
 
-export const projects: ProjectItem[] = [
+export const projects = [
   {
     id: "p1",
     title: "Rahul & Priya",
-    category: "Wedding Websites",
-    description: "A beautiful wedding website with story, RSVP, and gallery.",
-    image:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
-    tags: ["RSVP", "Countdown", "Gallery"],
+    category: "Wedding Websites" as ProjectCategory,
+    description: "A romantic story-first wedding website guests couldn't stop sharing — with live RSVP, countdown, and gallery.",
+    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85",
+    tags: ["RSVP", "Countdown", "Gallery", "Couple Story"],
     slug: "rahul-priya",
+    featured: true,
+    testimonial: { quote: "We got so many compliments on our website. It felt like a luxury magazine.", author: "Priya R." },
   },
   {
     id: "p2",
     title: "Our New Home",
-    category: "Housewarming Websites",
-    description: "A modern invite website for family and friends.",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-    tags: ["Invite", "Map", "Guest List"],
+    category: "Housewarming Websites" as ProjectCategory,
+    description: "A warm and elegant housewarming invite site with interactive map and guest confirmation.",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85",
+    tags: ["Invite", "Map", "Guest RSVP"],
     slug: "our-new-home",
+    featured: false,
   },
   {
     id: "p3",
     title: "InnovateX Solutions",
-    category: "Business Websites",
-    description: "A professional business website for an IT services company.",
-    image:
-      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
-    tags: ["B2B", "Services", "Contact"],
+    category: "Business Websites" as ProjectCategory,
+    description: "A conversion-driven business website that doubled inbound leads within the first month.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85",
+    tags: ["B2B", "Lead Gen", "SEO"],
     slug: "innovatex-solutions",
+    featured: false,
   },
   {
     id: "p4",
     title: "Mehendi Celebration",
-    category: "Invitation Websites",
-    description: "Digital invitation with event details, countdown, and RSVP.",
-    image:
-      "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=80",
+    category: "Invitation Websites" as ProjectCategory,
+    description: "A vibrant digital invitation with countdown, event schedule, and RSVP — shared 200+ times on WhatsApp.",
+    image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=85",
     tags: ["Invite", "Timeline", "RSVP"],
     slug: "mehendi-celebration",
+    featured: false,
   },
   {
     id: "p5",
-    title: "Friends Forever 25",
-    category: "Reunion Websites",
-    description: "Reunion website to reconnect and celebrate together.",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+    title: "Friends Forever '25",
+    category: "Reunion Websites" as ProjectCategory,
+    description: "A nostalgic reunion hub that brought 80+ batchmates together with memories, agenda and registration.",
+    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85",
     tags: ["Memories", "Agenda", "Register"],
     slug: "friends-forever-25",
+    featured: false,
   },
   {
     id: "p6",
-    title: "Aarav Birthday Bash",
-    category: "Invitation Websites",
-    description: "A colorful birthday invitation with fun event details.",
-    image:
-      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1200&q=80",
-    tags: ["Birthday", "Details", "RSVP"],
+    title: "Aarav's Birthday Bash",
+    category: "Invitation Websites" as ProjectCategory,
+    description: "A colourful, interactive birthday invitation with fun animations and a surprise reveal section.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85",
+    tags: ["Birthday", "Animated", "RSVP"],
     slug: "aarav-birthday-bash",
+    featured: false,
   },
 ];
