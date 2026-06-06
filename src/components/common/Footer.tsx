@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone, Instagram } from "lucide-react";
+import { Mail, MapPin, Instagram } from "lucide-react";
 import { navItems, siteConfig } from "../../constants/siteConfig";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
