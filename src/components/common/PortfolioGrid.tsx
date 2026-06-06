@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, ExternalLink, Star } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import { projectCategories, projects } from "../../constants/projects";
 import type { ProjectCategory } from "../../types";
 
